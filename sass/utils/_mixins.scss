@@ -6,3 +6,8 @@
 
 }
     
+@mixin flex ($dis: flex, $ai: center, $jc) {
+    display: $dis ;
+    align-items: $ai ;
+    justify-content: $jc ;
+}
