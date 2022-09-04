@@ -1,0 +1,47 @@
+.partners-list {
+    display: flex;
+    gap: 30px;
+}
+
+.partners-title {
+    @include font(700,36px,1.16,0.03em)
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    color: #212121;
+}
+
+.partners-item {
+    list-style: none;
+}
+
+.partners-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition-property: fill;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partners-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partners-link:hover,
+.partners-link:focus {
+    border: 1px solid var(--accent);
+}
+
+.partners-link:hover .partners-icon,
+.partners-link:focus .partners-icon {
+    fill: var(--accent);
+}

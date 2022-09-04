@@ -1,0 +1,22 @@
+.examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&-title {
+        color: #212121;
+    }
+&-list {
+    display: flex;
+    column-gap: 30px;
+}
+&-title {
+    @include font(null,36px,1.16,0.03em);
+    margin-bottom: 50px;
+    color: var(--color-h);
+    text-align: center;
+    
+}
+}
+
+
+
