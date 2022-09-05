@@ -26,6 +26,11 @@
             background-color: var(--accent);
             box-shadow: 0px 4px 4px 0px #00000040;
         }
+        &:hover,
+        &:focus {
+            color: var(--white-color-text);
+            background-color: var(--accent);
+        }
 
 }
 
@@ -37,11 +42,6 @@
     column-gap: 8px;
 }
 
-.gallary-button:hover,
-.gallary-button:focus {
-    color: var(--white-color-text);
-    background-color: var(--accent);
-}
 
 .secondary-list {
     gap: 30px;
