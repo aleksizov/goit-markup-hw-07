@@ -56,28 +56,27 @@
 
 .modal-icon-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
-
-    display: flex;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    fill: var(--logo-color);
-
-    transition: fill var(--main-transition);
+        top: 8px;
+        right: 8px;
+    
+        @include flex($jc: center);
+        width: 30px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        fill: var(--logo-color);
+    
+        transition: fill var(--main-transition);
+        &:hover .modal-icon-svg,
+            &:focus .modal-icon-svg {
+                fill: var(--accent);
+            }
 }
 
 
-.modal-icon-close:hover .modal-icon-svg,
-.modal-icon-close:focus .modal-icon-svg {
-    fill: var(--accent);
-}
+
 
 
 
@@ -101,8 +100,7 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-
-    transition: fill var(--main-transition);
+  transition: fill var(--main-transition);
 }
 
 .modal-coment {

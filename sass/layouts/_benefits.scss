@@ -12,11 +12,12 @@
     padding-bottom: 0;
 }
 
-.benefits-item {
+.benefits__item {
     max-width: 270px;
+   
 }
 
-.benefits-item-icon {
+.benefits-item__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,14 +33,16 @@
     display: flex;
 }
 
-.benefits-list {
+.benefits__list {
     display: flex;
     column-gap: 30px;
+    list-style: none;
+    align-items: center;
 }
 
 
 
-.benefits-item-title {
+.benefits__title {
     margin-bottom: 10px;
     @include font(700,14px,1.14,0.03);
 
@@ -47,6 +50,7 @@
     font-style: normal;
     text-transform: uppercase;
     color: #212121;
+    list-style: none;
 }
 
 .item-text {

@@ -120,11 +120,6 @@ img {
   color: var(--white-color-text);
 }
 
-.footer__logo {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -289,11 +284,11 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-item {
+.benefits__item {
   max-width: 270px;
 }
 
-.benefits-item-icon {
+.benefits-item__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,16 +311,20 @@ img {
   display: flex;
 }
 
-.benefits-list {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.benefits-item-title {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -335,6 +334,7 @@ img {
   font-style: normal;
   text-transform: uppercase;
   color: #212121;
+  list-style: none;
 }
 
 .item-text {
@@ -369,6 +369,35 @@ img {
   margin-bottom: 50px;
   color: var(--color-h);
   text-align: center;
+}
+
+.examples__item {
+  position: relative;
+}
+
+.img-set__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color-text);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .employees {
@@ -551,6 +580,7 @@ img {
 
 .logo-footer {
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -574,7 +604,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  display: block;
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -786,14 +815,8 @@ img {
   font-style: normal;
 }
 .address-margin {
-  margin-top: 20px;
   margin-bottom: 9px;
 }
-.address.address-link {
-  margin-top: 0;
-  display: inline-block;
-}
-
 .address-link {
   font-weight: 400;
   font-size: 14px;
@@ -801,6 +824,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  margin-bottom: 9px;
 }
 .address-link:hover, .address-link:focus {
   color: var(--accent);
@@ -990,25 +1014,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30px;
   height: 30px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
   fill: var(--logo-color);
   -webkit-transition: fill var(--main-transition);
   transition: fill var(--main-transition);
 }
-
-.modal-icon-close:hover .modal-icon-svg,
-.modal-icon-close:focus .modal-icon-svg {
+.modal-icon-close:hover .modal-icon-svg, .modal-icon-close:focus .modal-icon-svg {
   fill: var(--accent);
 }
 
